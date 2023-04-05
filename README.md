@@ -7,7 +7,7 @@
 
 ### Makefile
 ```sh
-$> git clone https://github.com/max044/Image_Compressor
+$> git clone https://github.com/max044/Image_Compressor.git
 $> cd Image_Compressor
 $> make
 ```
@@ -15,14 +15,18 @@ $> make
 
 ## How to use it ?
 ```sh
-$> ./imageCompressor -h
-USAGE: ./imageCompressor n e input
-
-	n		number of colors in the final image
-	e		convergence limit
-	input	path of the file containing the colors of the pixels
+$> ./imageCompressor --help
+USAGE: ./imageCompressor -n N -l L -f F
+      N       number of colors in the final image
+      L       convergence limit
+      F       path to the file containing the colors of the pixels
 ```
 <br>
+
+## Example
+```sh
+./imageCompressor -n 4 -l 5 -f ./example.in
+```
 
 ## Input Format
 ```sh
